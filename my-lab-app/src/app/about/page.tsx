@@ -9,9 +9,13 @@ import {
 } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: 'เกี่ยวกับเรา'
+  title: 'เกี่ยวกับเรา',
+  description: 'เรียนรู้เกี่ยวกับทีมงานและเทคโนโลยีที่เราใช้ในการพัฒนาเว็บแอปพลิเคชัน',
+  openGraph: {
+    title: 'เกี่ยวกับเรา | My Next.js App',
+    description: 'เรียนรู้เกี่ยวกับทีมงานและเทคโนโลยีที่เราใช้',
+  }
 }
-
 
 export default function AboutPage() {
   return (
@@ -47,7 +51,7 @@ export default function AboutPage() {
                   priority // บอก Next.js ให้โหลดทันที (LCP Optimization)
                 />
               </div>
-
+              
               {/* รูปภาพที่ 2: ใช้ Lazy Load ปกติ */}
               <div className="relative h-72 rounded-2xl overflow-hidden shadow-lg border">
                 <Image
